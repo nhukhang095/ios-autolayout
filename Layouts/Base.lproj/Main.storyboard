@@ -69,6 +69,23 @@
                                 <rect key="frame" x="133" y="642" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpe-Pr-ToQ">
+                                <rect key="frame" x="224" y="366" width="150" height="350"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFG-YJ-VRR">
+                                        <rect key="frame" x="5" y="5" width="140" height="340"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.95541419129206173" blue="0.59038465573253529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.30454282370000002" blue="0.41861562619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="JUd-yM-pKc"/>
+                                    <constraint firstItem="OFG-YJ-VRR" firstAttribute="leading" secondItem="wpe-Pr-ToQ" secondAttribute="leading" constant="5" id="Srf-ac-oOX"/>
+                                    <constraint firstItem="OFG-YJ-VRR" firstAttribute="top" secondItem="wpe-Pr-ToQ" secondAttribute="top" constant="5" id="az6-54-tr0"/>
+                                    <constraint firstAttribute="bottom" secondItem="OFG-YJ-VRR" secondAttribute="bottom" constant="5" id="lfL-Xb-jkD"/>
+                                    <constraint firstAttribute="trailing" secondItem="OFG-YJ-VRR" secondAttribute="trailing" constant="5" id="o8h-Tr-tp1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -81,15 +98,18 @@
                             <constraint firstItem="8Q4-Ee-IwL" firstAttribute="height" secondItem="eD1-jW-H3u" secondAttribute="height" id="FC8-we-09S"/>
                             <constraint firstItem="eD1-jW-H3u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="JOe-qE-TRI"/>
                             <constraint firstItem="TVb-xp-TCC" firstAttribute="height" secondItem="eD1-jW-H3u" secondAttribute="height" id="SUd-M0-3DA"/>
+                            <constraint firstItem="wpe-Pr-ToQ" firstAttribute="top" secondItem="TVb-xp-TCC" secondAttribute="bottom" constant="46" id="Y9N-Zc-IDU"/>
                             <constraint firstItem="hmi-TP-wz1" firstAttribute="height" secondItem="eD1-jW-H3u" secondAttribute="height" id="Zhy-0R-Xpq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Q4-Ee-IwL" secondAttribute="trailing" constant="20" id="aAP-fS-dQe"/>
                             <constraint firstItem="8Q4-Ee-IwL" firstAttribute="top" secondItem="hmi-TP-wz1" secondAttribute="bottom" constant="20" id="fmd-sm-QOe"/>
                             <constraint firstItem="hmi-TP-wz1" firstAttribute="leading" secondItem="eD1-jW-H3u" secondAttribute="trailing" constant="20" id="hac-Rw-YCa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wpe-Pr-ToQ" secondAttribute="bottom" constant="20" id="kA8-Jp-1B1"/>
                             <constraint firstItem="Obf-DX-Hre" firstAttribute="leading" secondItem="Pc6-jC-fcp" secondAttribute="leading" id="kGc-EM-buG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pc6-jC-fcp" secondAttribute="bottom" constant="123" id="qtw-0M-5pK"/>
                             <constraint firstItem="TVb-xp-TCC" firstAttribute="top" secondItem="8Q4-Ee-IwL" secondAttribute="bottom" constant="20" id="qwj-63-DCy"/>
                             <constraint firstItem="PUl-dL-gfs" firstAttribute="top" secondItem="Pc6-jC-fcp" secondAttribute="bottom" constant="29" id="u8V-AQ-4ma"/>
                             <constraint firstItem="PUl-dL-gfs" firstAttribute="leading" secondItem="Pc6-jC-fcp" secondAttribute="leading" id="ucV-4l-YoZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wpe-Pr-ToQ" secondAttribute="trailing" constant="20" id="vog-3o-fIx"/>
                             <constraint firstItem="Pc6-jC-fcp" firstAttribute="top" secondItem="Obf-DX-Hre" secondAttribute="bottom" constant="25" id="xvo-zg-ep0"/>
                             <constraint firstItem="8Q4-Ee-IwL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zqQ-xs-pdQ"/>
                         </constraints>
@@ -97,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="117.39130434782609" y="122.28260869565219"/>
         </scene>
     </scenes>
 </document>
