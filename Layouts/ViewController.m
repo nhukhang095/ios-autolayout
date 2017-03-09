@@ -4,6 +4,7 @@
 //
 //  Created by Joseph Nguyen on 3/9/17.
 //  Copyright © 2017 Joseph Nguyen. All rights reserved.
+//  https://www.raywenderlich.com/50317/beginning-auto-layout-tutorial-in-ios-7-part-1
 //
 
 #import "ViewController.h"
