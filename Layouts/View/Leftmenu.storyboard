@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,22 +22,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-P8-kHa">
-                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NSS-X0-BJm" userLabel="Header Cell">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NSS-X0-BJm" id="j6j-uG-Thc">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="12g-mV-6La" userLabel="Menu Cell">
-                                        <rect key="frame" x="0.0" y="72" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12g-mV-6La" id="wuq-Sh-5B3">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -47,16 +46,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yKT-P8-kHa" firstAttribute="top" secondItem="2qk-yd-GRF" secondAttribute="topMargin" id="J75-f3-0Ng"/>
-                            <constraint firstItem="PnI-BC-KhL" firstAttribute="top" secondItem="yKT-P8-kHa" secondAttribute="bottom" id="Qw4-aX-QC6"/>
-                            <constraint firstItem="yKT-P8-kHa" firstAttribute="leading" secondItem="2qk-yd-GRF" secondAttribute="leadingMargin" id="TMy-xA-c2g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yKT-P8-kHa" secondAttribute="trailing" id="wNZ-0h-1Pb"/>
+                            <constraint firstItem="yKT-P8-kHa" firstAttribute="leading" secondItem="2qk-yd-GRF" secondAttribute="leading" id="9b6-2K-Mzu"/>
+                            <constraint firstItem="yKT-P8-kHa" firstAttribute="top" secondItem="2qk-yd-GRF" secondAttribute="top" id="DNR-Kk-8iI"/>
+                            <constraint firstAttribute="trailing" secondItem="yKT-P8-kHa" secondAttribute="trailing" id="G71-SJ-5qV"/>
+                            <constraint firstItem="PnI-BC-KhL" firstAttribute="top" secondItem="yKT-P8-kHa" secondAttribute="bottom" id="IsF-Xu-Hho"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVG-y6-Owp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.19999999999999" y="28.335832083958024"/>
+            <point key="canvasLocation" x="-215.5" y="27.5"/>
         </scene>
     </scenes>
 </document>
