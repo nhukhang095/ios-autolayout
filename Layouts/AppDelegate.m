@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IIViewDeckController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,24 @@
 
 @implementation AppDelegate
 
+-(void)changeRootViewController{
+    UIStoryboard *leftMenuStory = [UIStoryboard storyboardWithName:@"Leftmenu" bundle:nil];
+    UIViewController *leftController = [[UINavigationController alloc] initWithRootViewController:[leftMenuStory instantiateViewControllerWithIdentifier:@"LeftMenuController"]];
+    
+    UIStoryboard *centerStory = [UIStoryboard storyboardWithName:@"ImageView" bundle:nil];
+    UIViewController *centerController = [[UINavigationController alloc] initWithRootViewController:[centerStory instantiateViewControllerWithIdentifier:@"ImageViewController"]];
+    
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:leftController];
+    
+    [self.window setRootViewController:deckController];
+    [self.window makeKeyAndVisible];
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    [self changeRootViewController];
+    
     return YES;
 }
 

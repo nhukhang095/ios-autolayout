@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Layouts
+
+  Created by Joseph Nguyen on 4/29/17.
+  Copyright © 2017 Joseph Nguyen. All rights reserved.
+*/
+"menu" = "Menu";
+"image_view" = "Hình ảnh layout";
