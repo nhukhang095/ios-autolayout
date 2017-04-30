@@ -14,5 +14,5 @@
 @interface CommonUtils : NSObject
 
 +(UIColor*)navigationBarBackGroundColor;
-
++(UIButton*)setupNavigationBar:(UIViewController *)controller;
 @end

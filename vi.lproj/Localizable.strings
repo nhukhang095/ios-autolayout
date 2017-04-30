@@ -6,4 +6,10 @@
   Copyright © 2017 Joseph Nguyen. All rights reserved.
 */
 "menu" = "Menu";
+"menu_header" = "Các đối tượng IOS";
+"auto_layout" = "Auto layout";
 "image_view" = "Hình ảnh layout";
+"menu_section_layout" = "Giao diện";
+"menu_section_program" = "Lập trình";
+
+

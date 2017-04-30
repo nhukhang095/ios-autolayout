@@ -6,4 +6,9 @@
   Copyright © 2017 Joseph Nguyen. All rights reserved.
 */
 "menu" = "Menu";
+"menu_header" = "Sample Components";
+"auto_layout" = "Auto layout";
 "image_view" = "Image View";
+"menu_section_layout" = "Layout";
+"menu_section_program" = "Program";
+

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeftMenuViewController : UIViewController
+@interface LeftMenuViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tbvLeftMenu;
 
 @end
