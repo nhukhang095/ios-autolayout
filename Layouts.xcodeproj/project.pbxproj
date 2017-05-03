@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0386BABC1EB818640028A241 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0386BABB1EB818640028A241 /* Login.storyboard */; };
+		0386BAC01EB8189B0028A241 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0386BABF1EB8189B0028A241 /* LoginViewController.m */; };
+		0386BAC31EB835AC0028A241 /* 2-brush-light.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0386BAC21EB835AC0028A241 /* 2-brush-light.jpg */; };
+		0386BAD71EB852C70028A241 /* AppConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0386BAD41EB852C70028A241 /* AppConstant.m */; };
+		0386BAD81EB852C70028A241 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0386BAD61EB852C70028A241 /* CommonUtils.m */; };
+		0386BADB1EB8532E0028A241 /* AFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0386BADA1EB8532E0028A241 /* AFNetworkingHelper.m */; };
+		0386BADE1EB857CF0028A241 /* UrlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0386BADD1EB857CF0028A241 /* UrlManager.m */; };
+		0386BAE11EB8EE1F0028A241 /* Document in Resources */ = {isa = PBXBuildFile; fileRef = 0386BAE01EB8EE1F0028A241 /* Document */; };
 		03871B4E1E71A35300575B2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03871B4D1E71A35300575B2C /* main.m */; };
 		03871B511E71A35400575B2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03871B501E71A35400575B2C /* AppDelegate.m */; };
 		03871B591E71A35400575B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03871B581E71A35400575B2C /* Assets.xcassets */; };
@@ -15,7 +23,6 @@
 		0388A62D1EB5E3A4008D7EFD /* AutoLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0388A62C1EB5E3A4008D7EFD /* AutoLayout.storyboard */; };
 		0388A6301EB5E3DB008D7EFD /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0388A62F1EB5E3DB008D7EFD /* AutoLayoutViewController.m */; };
 		03999B5A1EB3ABC1003D64C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03999B591EB3ABC1003D64C0 /* LaunchScreen.storyboard */; };
-		039ACA791EB50407000A5A24 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ACA781EB50407000A5A24 /* CommonUtils.m */; };
 		039ACA851EB50425000A5A24 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ACA801EB50425000A5A24 /* ImageViewController.m */; };
 		039ACA861EB50425000A5A24 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039ACA831EB50425000A5A24 /* LeftMenuViewController.m */; };
 		039ACA8A1EB5042E000A5A24 /* ImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039ACA881EB5042E000A5A24 /* ImageView.storyboard */; };
@@ -44,6 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0386BABB1EB818640028A241 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		0386BABE1EB8189B0028A241 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0386BABF1EB8189B0028A241 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0386BAC21EB835AC0028A241 /* 2-brush-light.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-brush-light.jpg"; sourceTree = "<group>"; };
+		0386BAD31EB852C70028A241 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		0386BAD41EB852C70028A241 /* AppConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstant.m; sourceTree = "<group>"; };
+		0386BAD51EB852C70028A241 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		0386BAD61EB852C70028A241 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		0386BAD91EB8532E0028A241 /* AFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHelper.h; sourceTree = "<group>"; };
+		0386BADA1EB8532E0028A241 /* AFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHelper.m; sourceTree = "<group>"; };
+		0386BADC1EB857CF0028A241 /* UrlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlManager.h; sourceTree = "<group>"; };
+		0386BADD1EB857CF0028A241 /* UrlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlManager.m; sourceTree = "<group>"; };
+		0386BAE01EB8EE1F0028A241 /* Document */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Document; sourceTree = "<group>"; };
 		03871B491E71A35300575B2C /* Layouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Layouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03871B4D1E71A35300575B2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03871B4F1E71A35400575B2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,8 +80,6 @@
 		0388A62E1EB5E3DB008D7EFD /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
 		0388A62F1EB5E3DB008D7EFD /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 		03999B591EB3ABC1003D64C0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		039ACA771EB50407000A5A24 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
-		039ACA781EB50407000A5A24 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		039ACA7F1EB50425000A5A24 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		039ACA801EB50425000A5A24 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		039ACA821EB50425000A5A24 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
@@ -106,9 +124,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0386BABD1EB8188C0028A241 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0386BABE1EB8189B0028A241 /* LoginViewController.h */,
+				0386BABF1EB8189B0028A241 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0386BAC11EB8359F0028A241 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0386BAC21EB835AC0028A241 /* 2-brush-light.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0386BADF1EB8EE030028A241 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				0386BAE01EB8EE1F0028A241 /* Document */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 		03871B401E71A35300575B2C = {
 			isa = PBXGroup;
 			children = (
+				0386BADF1EB8EE030028A241 /* Document */,
+				0386BAC11EB8359F0028A241 /* Resources */,
 				03EA5A5A1EB493E9005DE51E /* Multilanguages */,
 				039ACA761EB50407000A5A24 /* Utils */,
 				03871B4B1E71A35300575B2C /* Layouts */,
@@ -174,8 +219,14 @@
 		039ACA761EB50407000A5A24 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				039ACA771EB50407000A5A24 /* CommonUtils.h */,
-				039ACA781EB50407000A5A24 /* CommonUtils.m */,
+				0386BAD31EB852C70028A241 /* AppConstant.h */,
+				0386BAD41EB852C70028A241 /* AppConstant.m */,
+				0386BAD51EB852C70028A241 /* CommonUtils.h */,
+				0386BAD61EB852C70028A241 /* CommonUtils.m */,
+				0386BAD91EB8532E0028A241 /* AFNetworkingHelper.h */,
+				0386BADA1EB8532E0028A241 /* AFNetworkingHelper.m */,
+				0386BADC1EB857CF0028A241 /* UrlManager.h */,
+				0386BADD1EB857CF0028A241 /* UrlManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +234,7 @@
 		039ACA7A1EB50425000A5A24 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0386BABD1EB8188C0028A241 /* Login */,
 				039ACA7B1EB50425000A5A24 /* AutoLayout */,
 				039ACA7E1EB50425000A5A24 /* ImageView */,
 				039ACA811EB50425000A5A24 /* LeftMenu */,
@@ -224,6 +276,7 @@
 				039ACA881EB5042E000A5A24 /* ImageView.storyboard */,
 				039ACA891EB5042E000A5A24 /* Leftmenu.storyboard */,
 				0388A62C1EB5E3A4008D7EFD /* AutoLayout.storyboard */,
+				0386BABB1EB818640028A241 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -365,8 +418,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0386BAC31EB835AC0028A241 /* 2-brush-light.jpg in Resources */,
 				039ACA8B1EB5042E000A5A24 /* Leftmenu.storyboard in Resources */,
 				0388A62D1EB5E3A4008D7EFD /* AutoLayout.storyboard in Resources */,
+				0386BABC1EB818640028A241 /* Login.storyboard in Resources */,
+				0386BAE11EB8EE1F0028A241 /* Document in Resources */,
 				03EA5AC11EB4FCE9005DE51E /* Localizable.strings in Resources */,
 				039ACA8A1EB5042E000A5A24 /* ImageView.storyboard in Resources */,
 				03871B591E71A35400575B2C /* Assets.xcassets in Resources */,
@@ -447,8 +503,12 @@
 				039ACA851EB50425000A5A24 /* ImageViewController.m in Sources */,
 				03871B511E71A35400575B2C /* AppDelegate.m in Sources */,
 				0388A6301EB5E3DB008D7EFD /* AutoLayoutViewController.m in Sources */,
-				039ACA791EB50407000A5A24 /* CommonUtils.m in Sources */,
+				0386BADB1EB8532E0028A241 /* AFNetworkingHelper.m in Sources */,
+				0386BAC01EB8189B0028A241 /* LoginViewController.m in Sources */,
+				0386BAD71EB852C70028A241 /* AppConstant.m in Sources */,
+				0386BAD81EB852C70028A241 /* CommonUtils.m in Sources */,
 				039ACA861EB50425000A5A24 /* LeftMenuViewController.m in Sources */,
+				0386BADE1EB857CF0028A241 /* UrlManager.m in Sources */,
 				03871B4E1E71A35300575B2C /* main.m in Sources */,
 				0388A6281EB59E8A008D7EFD /* MenuHeaderTableViewCell.m in Sources */,
 			);

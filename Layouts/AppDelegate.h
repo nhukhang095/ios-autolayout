@@ -11,6 +11,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic,strong) MBProgressHUD* mainHUD;
+
+-(void)changeRootViewController;
+-(void)changeCenterViewController;
 
 
 @end

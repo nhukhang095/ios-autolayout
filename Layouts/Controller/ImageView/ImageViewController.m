@@ -20,19 +20,8 @@
 
 - (void)setupNavigationBar {
     //create back bar button item
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setImage:[UIImage imageNamed:@"tabbar-More"] forState:UIControlStateNormal];
-    [backButton sizeToFit];
+    UIButton *backButton = [CommonUtils setupNavigationBar:self];
     [backButton addTarget:self action:@selector(openLeftMenu:) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem* backButtonBarItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-    self.navigationItem.leftBarButtonItem = backButtonBarItem;
-    
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setBarTintColor:[CommonUtils navigationBarBackGroundColor]];
-    self.navigationController.navigationBar.topItem.title = NSLocalizedString(@"image_view", nil);
-    
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    [self.navigationController.navigationBar setTranslucent:NO];
 }
 
 

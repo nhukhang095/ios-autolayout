@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "IIViewDeckController.h"
+#import "LoginViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<LoginViewControllerDelegate>
 
 @end
 
@@ -23,16 +24,42 @@
     UIViewController *centerController = [[UINavigationController alloc] initWithRootViewController:[centerStory instantiateViewControllerWithIdentifier:@"ImageViewController"]];
     
     IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController leftViewController:leftController];
-    
     [self.window setRootViewController:deckController];
-    [self.window makeKeyAndVisible];
+}
+
+-(void)changeCenterViewController{
+    if (![self.window.rootViewController isKindOfClass:[IIViewDeckController class]]) {
+        [self changeRootViewController];
+    }
+    else{
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"ImageView" bundle:nil];
+        UIViewController *centerController = [[UINavigationController alloc] initWithRootViewController:[story instantiateViewControllerWithIdentifier:@"ImageViewController"]];
+        [((IIViewDeckController*)self.window.rootViewController) closeSide:NO];
+        [((IIViewDeckController*)self.window.rootViewController) setCenterViewController:centerController];
+    }
+}
+
+
+-(void)loginSuccess{
+    [self changeRootViewController];
 }
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[CommonUtils sharedUtils] setHostInfo:@"http://rrm.fcv-etools.com/fcv-rl-web"];
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    [self changeRootViewController];
     
+    NSNumber *userId = [CommonUtils sharedUtils].userId;    
+    if ([userId integerValue] < 0 || [userId isKindOfClass:[NSNull class]] || userId == nil) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+        UIViewController *centerController = [[UINavigationController alloc] initWithRootViewController:[storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"]];
+        //login.delegate = self;
+        self.window.rootViewController = centerController;
+    }else{
+        [self changeRootViewController];
+    }
+    
+    [self.window makeKeyAndVisible];    
     return YES;
 }
 
