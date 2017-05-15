@@ -11,6 +11,7 @@
 #import "MenuHeaderItemTableViewCell.h"
 #import "ImageViewController.h"
 #import "AutoLayoutViewController.h"
+#import "HScrollViewController.h"
 
 @interface LeftMenuViewController (){
     NSMutableArray *groupTitles;
@@ -71,7 +72,11 @@
     //Auto layout
     [groupTitles addObject:NSLocalizedString(@"auto_layout", nil)];
     [groupIcons addObject:@"menu_icon"];
-    
+
+    //Horizontal view
+    [groupTitles addObject:NSLocalizedString(@"menu_h_scroll_view", nil)];
+    [groupIcons addObject:@"menu_icon"];
+
 }
 
 -(void) sectionAction : (UIButton*)sender{
@@ -118,6 +123,9 @@
             break;
         case 2:
             [btnSection setTitle:NSLocalizedString(@"menu_section_program", nil) forState:UIControlStateNormal];
+            break;
+        case 3:
+            [btnSection setTitle:NSLocalizedString(@"menu_h_scroll_view", nil) forState:UIControlStateNormal];
             break;
         default:
             break;
@@ -167,6 +175,15 @@
                     
                     UIStoryboard *myhealth = [UIStoryboard storyboardWithName:@"AutoLayout" bundle:nil];
                     centerVC = [[UINavigationController alloc] initWithRootViewController:[myhealth instantiateViewControllerWithIdentifier:@"AutoLayoutViewController"]];
+                }
+                
+                break;
+            }
+            case 2: {
+                if (![((UINavigationController*)self.viewDeckController.centerViewController).viewControllers[0] isKindOfClass:[HScrollViewController class]]) {
+                    
+                    UIStoryboard *hScrollView = [UIStoryboard storyboardWithName:@"HScrollView" bundle:nil];
+                    centerVC = [[UINavigationController alloc] initWithRootViewController:[hScrollView instantiateViewControllerWithIdentifier:@"HScrollViewController"]];
                 }
                 
                 break;

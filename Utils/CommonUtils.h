@@ -54,5 +54,5 @@
 +(NSString*)getDeviceCountryString;
 +(void)showConfirmAlertViewWithTitle:(NSString*)title message:(NSString*)message cancelButton:(NSString*)cancelBtn delegate:(id)delegate;
 
-
++ (UIColor *) colorFromHexCode:(NSString *)hexString;
 @end

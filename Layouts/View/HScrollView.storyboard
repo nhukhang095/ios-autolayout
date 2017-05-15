@@ -12,7 +12,7 @@
         <!--Scroll View Controller-->
         <scene sceneID="3Dj-e6-JhV">
             <objects>
-                <viewController id="3LF-zi-ec7" customClass="HScrollViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HScrollViewController" id="3LF-zi-ec7" customClass="HScrollViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FP3-up-3T6"/>
                         <viewControllerLayoutGuide type="bottom" id="bfw-of-frW"/>
