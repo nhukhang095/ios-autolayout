@@ -17,7 +17,7 @@
 - (AppDelegate *)getAppDelegate;
 
 +(UIColor*)navigationBarBackGroundColor;
-+(UIButton*)setupNavigationBar:(UIViewController *)controller;
++(UIButton*)setupNavigationBar:(UIViewController *)controller withTitle: (NSString *) title;
 
 - (NSString *)hostInfo;
 - (void)setHostInfo:(NSString *)key;

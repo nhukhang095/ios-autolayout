@@ -34,7 +34,7 @@
     [controller.viewDeckController openSide:IIViewDeckSideLeft animated:YES];
 }
 
-+(UIButton*)setupNavigationBar:(UIViewController *)controller {
++(UIButton*)setupNavigationBar:(UIViewController *)controller withTitle:(NSString *)title {
     //create back bar button item
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setImage:[UIImage imageNamed:@"tabbar-More"] forState:UIControlStateNormal];
@@ -44,7 +44,7 @@
     
     [controller.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     [controller.navigationController.navigationBar setBarTintColor:[CommonUtils navigationBarBackGroundColor]];
-    controller.navigationController.navigationBar.topItem.title = NSLocalizedString(@"auto_layout", nil);
+    controller.navigationController.navigationBar.topItem.title = title;
     
     [controller.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [controller.navigationController.navigationBar setTranslucent:NO];

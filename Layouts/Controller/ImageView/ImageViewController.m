@@ -20,7 +20,7 @@
 
 - (void)setupNavigationBar {
     //create back bar button item
-    UIButton *backButton = [CommonUtils setupNavigationBar:self];
+    UIButton *backButton = [CommonUtils setupNavigationBar:self withTitle:NSLocalizedString(@"image_view", nil)];
     [backButton addTarget:self action:@selector(openLeftMenu:) forControlEvents:UIControlEventTouchUpInside];
 }
 

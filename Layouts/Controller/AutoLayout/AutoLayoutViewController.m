@@ -20,7 +20,7 @@
 }
 
 - (void)setupNavigationBar {    
-    UIButton *backButton = [CommonUtils setupNavigationBar:self];
+    UIButton *backButton = [CommonUtils setupNavigationBar:self withTitle:NSLocalizedString(@"auto_layout", nil)];
     [backButton addTarget:self action:@selector(openLeftMenu:) forControlEvents:UIControlEventTouchUpInside];
 }
 
